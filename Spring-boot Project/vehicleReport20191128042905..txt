@@ -1,0 +1,3 @@
+CAA0897 : Toyota : Axio : 50000 : auto : 1500 : 4 : car : 
+CAF0295 : Audi : A3 : 60000 : auto : 1000 : 4 : car : 
+CAH0898 : Suzuki : Alto : 20000 : auto : 800 : 4 : car : 

@@ -1,0 +1,59 @@
+.needs-validation{
+    margin-left: 100px;
+    margin-right:100px;
+}
+
+h2{
+    text-align: center;
+}
+button{
+    float: right;
+    width: 910px;
+    background-color:#48757c;
+}
+select{
+    width: 910px;
+}
+option[value=""][disabled] {
+    display: none;
+}
+
+/*
+form{
+    margin-right:400px;
+    margin-left: 400px;  
+}
+.form{
+    background-color: rgb(83, 180, 204);
+    padding:20px;
+}
+.form-group>input{
+    font-weight: bold;
+}
+.form-group>label{
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-family: calibri;
+}
+button[type="submit"]{
+    background-color:#0d1852;
+    color: rgb(85, 189, 221);
+}
+input .ng-touched.ng-invalid{
+    border-color: blueviolet;
+}
+div.validation-error{
+    width:100%; 
+    font: size 80%;
+    color: crimson;
+}
+h3{
+    color: #0d1852;
+    text-align: center;
+    font-weight: bold;
+}
+h1{
+    text-align: center;
+    color: rgb(38, 13, 58);
+} */

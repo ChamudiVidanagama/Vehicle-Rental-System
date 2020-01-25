@@ -1,0 +1,73 @@
+<br>
+<div class="form-group mb-4">
+    <input class="form-control" type="text" [(ngModel)]="searchText" placeholder="Search">
+</div>
+
+<div class="container"><br>
+        <table class="table" *ngIf="(vehicles | filter: searchText).length > 0; else noResults">
+          <thead>
+            <tr>
+              <th>Vehicle Id</th>
+              <th>PlateNo</th>
+              <th>Make</th>
+              <th>Model</th>
+              <th>Rate</th>
+              <th>Transmission</th>
+              <th>Engine capacity</th>
+              <th>Passengers</th>
+              <th>Vehicle type</th>
+              <th>Type of car</th>
+              <th>Air conditioned</th>
+              <th>Bike type</th>
+              <th>Clutch bike</th>
+            </tr>
+          </thead>
+          <tbody >
+            <tr *ngFor="let vehicle of vehicles | filter: searchText; let i = index">
+              <td>{{i+1}}</td>
+              <td>{{vehicle.plateNo}}</td>
+              <td>{{vehicle.make}}</td>
+              <td>{{vehicle.model}}</td>
+              <td>{{vehicle.rate}}</td>
+              <td>{{vehicle.transmission}}</td>
+              <td>{{vehicle.engineCapacity}}</td>
+              <td>{{vehicle.noOfPassengers}}</td>
+              <td>{{vehicle.vehicleType}}</td>
+              <td>{{vehicle.typeOfCar}}</td>
+              <td>{{vehicle.airConditioned}}</td>
+              <td>{{vehicle.bikeType}}</td>
+              <td>{{vehicle.clutchBike}}</td>
+              <button><a href="booking/?plateNo={{vehicle.plateNo}}">Book</a></button>
+              <!-- <button (click)="viewBooking()" [routerLink]="['/booking', vehicle.plateNo]"><a href="booking/?plateNo=vehicle.plateNo">Book</a></button> -->
+            </tr>
+          </tbody>
+        </table>
+
+        <ng-template #noResults>
+          <p>No results found for "{{searchText}}".</p>
+        </ng-template>
+</div>
+
+
+
+
+
+
+<!-- <div class="allsections">
+  <br>
+  <div *ngFor="let vehicle of vehicles">
+    <div class="section" *ngIf="vehicle.vehicleType == 'car'" > 
+        <div class="container">
+            <br>
+            <img class="vehicle" src="/assets/img/bike1.jpg">
+            <div class="sec">
+                <div class="text"><a href ="#"><button (click)="getDetails()">View Details</button></a></div>
+               
+            </div>
+        </div>
+        <h2>{{vehicle.make}} {{vehicle.model}}</h2> 
+    </div>
+  </div>
+</div> -->
+
+

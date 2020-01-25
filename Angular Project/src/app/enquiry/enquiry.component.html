@@ -1,0 +1,117 @@
+<div class="container">
+    <br><h2>Check Availability</h2><br>
+    <form action=" " class="needs-validation" novalidate>
+        <div class="form-group">
+          <!-- <label for="pickupLocation">Pickup Location:</label> -->
+          <input type="text" class="form-control" id="pickupLocation" placeholder="Pickup Location" name="pickupLocation" required>
+          <!-- <div class="valid-feedback">Valid.</div> -->
+          <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+        <div class="form-group">
+            <!-- <label for="dropoffLocation">Dropoff Location:</label> -->
+            <input type="text" class="form-control" id="dropoffLocation" placeholder="Dropoff Location" name="dropoffLocation" required>
+            <!-- <div class="valid-feedback">Valid.</div> -->
+            <div class="invalid-feedback">Please fill out this field.</div>
+          </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <!-- <label for="pickupDate">Pickup Date:</label> -->
+            <input type="text" placeholder="Pickup date" onfocus="(this.type='date')" class="form-control" id="pickupDate" placeholder="Pickup Date" name="pickupDate" required>
+            <!-- <div class="valid-feedback">Valid.</div> -->
+            <div class="invalid-feedback">Please fill out this field.</div>
+          </div>
+          <div class="form-group col-md-6">
+            <!-- <label for="dropoffDate">Dropoff Date:</label> -->
+            <input type="text" placeholder="Dropoff date" onfocus="(this.type='date')" class="form-control" id="dropoffDate" placeholder="Dropoff Date" name="dropoffDate" required>
+            <!-- <div class="valid-feedback">Valid.</div> -->
+            <div class="invalid-feedback">Please fill out this field.</div>
+          </div>
+        </div>
+        <div class="form-group">
+          <!-- <label for="vehicleType">Vehicle Type: -->
+            <label for="vehicleType">
+              <select name="VehicleType" class="form-control" required>
+                  <option value="" disabled selected>Select Vehicle Type</option>
+                  <option value="car">Car</option>
+                  <option value="motorbike">Motorbike</option>
+              </select>
+            <!-- <div class="valid-feedback">Valid.</div> -->
+            <div class="invalid-feedback">Please fill out this field.</div>
+          </label>
+        </div>
+        <button type="submit" class="btn btn-primary">Search</button>
+      </form>
+</div>
+
+<!-- <div class="enquiry">
+<form #form="ngForm" (submit)=onSubmit(form)>
+        <br/>
+        <div class="form">
+        <h3>Check Availability</h3>
+        <div class="form-group">
+            <label>PICKUP LOCATION</label>
+            <input name="PickupLocation" #PickupLocation="ngModel" [(ngModel)]="service.formData.PickupLocation" class="form-control" required>
+            <div class="validation-error" *ngIf="PickupLocation.invalid && PickupLocation.touched">Full Name field is required</div>
+        </div>
+        <div class="form-group">
+            <label>DROPOFF LOCATION</label>
+            <input name="DropoffLocation" #DropoffLocation="ngModel" [(ngModel)]="service.formData.DropoffLocation" class="form-control"required>
+            <div class="validation-error" *ngIf="DropoffLocation.invalid && DropoffLocation.touched">DropoffLocation field is required</div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label>PICKUP DATE</label>
+                <input type="date" name="PickupDate" #PickupDate="ngModel" [(ngModel)]="service.formData.PickupDate" class="form-control" required>
+                <div class="validation-error" *ngIf="PickupDate.invalid && PickupDate.touched">PickupDate field is required</div>
+            </div>
+            <div class="form-group col-md-6">
+                <label>DROPOFF DATE</label>
+                <input type="date" name="DropoffDate" #DropoffDate="ngModel" [(ngModel)]="service.formData.DropoffDate" class="form-control" required>
+                <div class="validation-error" *ngIf="DropoffDate.invalid && DropoffDate.touched">DropoffDate field is required</div>
+            </div>
+        </div>
+        <div class="form-group">
+                <label>VEHICLE TYPE</label>
+                <select name="VehicleType" #VehicleType="ngModel" [(ngModel)]="service.formData.VehicleType" class="form-control"required>
+                        <option value="VehicleType">Select Vehicle Type</option>
+                        <option value="car">Car</option>
+                        <option value="motorbike">MotorBike</option>
+                </select>
+                <div class="validation-error" *ngIf="VehicleType.invalid && VehicleType.touched">VehicleType field is required</div>          
+        </div>
+        <div class="form-group">
+                <label>CURRENCY TYPE</label>
+                <select name="CurrencyType" #CurrencyType="ngModel" [(ngModel)]="service.formData.CurrencyType" class="form-control"required>
+                        <option value="CurrencyType">Select Currency Type</option>
+                        <option value="lkr">Sri Lankan Rupees (LKR)</option>
+                        <option value="Currency">-Currency-</option>
+                </select>
+                <div class="validation-error" *ngIf="VehicleType.invalid && VehicleType.touched">VehicleType field is required</div>          
+        </div>
+        <div class="form-group">
+            <button type="submit" [disabled]="form.invalid" class="btn btn-lg btn-block">SEARCH</button>
+        </div>
+    </div>
+        <br/>
+    </form>
+</div> 
+
+
+
+
+        <div class="form-group">
+            <label for="vehicleType">Vehicle Type:
+            <input type="radio" class="form-control" id="car" value="car" name="vehicle" required><br>
+            <input type="radio" class="form-control" id="motorbike" value="motorbike" name="vehicle" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+          </label>
+          </div>
+
+
+
+
+
+
+
+-->

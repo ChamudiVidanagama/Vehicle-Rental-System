@@ -1,0 +1,100 @@
+table{
+  margin-left: -100px;
+  width:1300px ;
+}
+.form-control{
+  width: 1300px;
+  margin-left:30px;
+}
+/* h2{
+    color:#0d1852;
+    font-family:Tahoma;
+    font-size: 16px;
+    font-weight: bolder;
+    padding: 5px;
+    margin-left: 15px;
+    background-color: rgb(172, 161, 161);
+    width: 290px;
+  }
+  .vehicle{
+    height:175px;
+    width:275px;
+  
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  
+  }
+  .section {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  
+  }
+  .allsections::after {
+  content: "";
+  clear: both;
+  display: table;
+  width:100%;
+  padding: 10px;
+  
+  }
+  .container {
+  position: relative;
+  }
+  .sec {
+
+  
+    position: absolute;
+    bottom: 100%;
+ 
+    background-color: rgb(61, 61, 61);
+    overflow: hidden;
+    width: 90%;
+    height:0;
+    transition: .5s ease;
+    opacity: 0.9;
+    
+  }
+
+  .container:hover .sec {
+  bottom: 0;
+  height: 100%;
+  }
+  .text {
+
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  
+  }
+  button{
+  
+  background-color: rgb(61, 61, 61); 
+  border: none;
+  color: rgb(255, 255, 255);
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; 
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border: 1px solid rgb(255, 255, 255);
+
+  }  
+  
+  button:hover {
+  background-color: #ffffff;
+  color: red;
+  
+  } */
+  

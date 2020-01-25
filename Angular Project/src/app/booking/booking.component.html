@@ -1,0 +1,50 @@
+<div class="container">
+        <br><h2>Book Vehicles</h2><br>
+        <form #form="ngForm" (submit)=onSubmit(form) class="needs-validation" novalidate>
+            <div class="form-group">
+                <input type="text" class="form-control" #scheduleId="ngModel" [(ngModel)]="BookingService.formData.scheduleId"  placeholder="Schedule Id" name="scheduleId" required> 
+                <div class="invalid-feedback">Please fill out this field.</div>
+              </div>
+            <div class="form-group">
+              <input type="text" class="form-control" #pickupLocation="ngModel" [(ngModel)]="BookingService.formData.pickupLocation" placeholder="Pickup Location" name="pickupLocation" required>
+              <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" #dropoffLocation="ngModel" [(ngModel)]="BookingService.formData.dropoffLocation" placeholder="Dropoff Location" name="dropoffLocation" required>
+                <div class="invalid-feedback">Please fill out this field.</div>
+              </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <input type="text" placeholder="Pickup date" onfocus="(this.type='date')" class="form-control" #pickupDate="ngModel" [(ngModel)]="BookingService.formData.pickupDate" placeholder="Pickup Date" name="pickupDate" required>
+                <div class="invalid-feedback">Please fill out this field.</div>
+              </div>
+              <div class="form-group col-md-6">
+                <input type="text" placeholder="Dropoff date" onfocus="(this.type='date')" class="form-control" #dropoffDate="ngModel" [(ngModel)]="BookingService.formData.dropoffDate" placeholder="Dropoff Date" name="dropoffDate" required>
+                <div class="invalid-feedback">Please fill out this field.</div>
+              </div>
+            </div>
+            <div class="form-group">
+                    <input type="text" class="form-control" #plateNo="ngModel" [(ngModel)]="BookingService.formData.plateNo" placeholder="Vehicle Plate No" name="plateNo" required>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+           </div>
+           <div class="form-group">
+              <input type="text" class="form-control" #plateNo="ngModel" [(ngModel)]="BookingService.formData.vehicleType" placeholder="Vehicle Type" name="vehicleType" required>
+              <div class="invalid-feedback">Please fill out this field.</div>
+          </div>
+            <button type="submit" class="btn btn-primary">Book Vehicle</button>
+          </form>
+    </div>
+    
+    
+
+    
+                <!-- <div class="form-group">
+                <label for="vehicleType">
+                  <select name="VehicleType" class="form-control" required>
+                      <option value="" disabled selected>Select Vehicle Type</option>
+                      <option value="car" #vehicleType="ngModel" [(ngModel)]="BookingService.formData.vehicleType" name="vehicleType">Car</option>
+                      <option value="motorbike" #vehicleType="ngModel" [(ngModel)]="BookingService.formData.vehicleType" name="vehicleType" >Motorbike</option>
+                  </select>
+                <div class="invalid-feedback">Please fill out this field.</div>
+              </label>
+            </div>  -->
